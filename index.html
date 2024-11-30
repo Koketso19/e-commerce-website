@@ -1,94 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=endge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Neihbour e-commerce</title>
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech Store</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <header>
+    <nav>
+      <div class="logo">
+        <h1>TechStore</h1>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#cart">Cart (<span id="cart-count">0</span>)</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-
-<section id="header">
-    <a href="#"><img src="#" class="logo" alt=""></a>
-
-    <div>
-        <ul id="navbar">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="shop.html">Shop</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="">Home</a></li>
-
-        </ul>
+  <section id="home" class="hero-section">
+    <div class="hero-text">
+      <h2>Welcome to TechStore</h2>
+      <p>Find the best gadgets and tech products at unbeatable prices</p>
+      <button class="shop-now">Shop Now</button>
     </div>
-</section>
+  </section>
 
-<section id="hero">
-    <h4> Trade-in-offer</h4>
-    <h2>Super value deals</h2>
-    <h1>On all products</h1>
-    <p>Save more with coupons & up to 70% off!</p>
-    <button>Shop now</button>
-</section>
+  <section id="products" class="products-section">
+    <h2>Our Products</h2>
+    <div class="product-list">
+      <!-- Example Product 1 -->
+      <div class="product-card">
+        <img src="https://via.placeholder.com/200" alt="Product 1">
+        <h3>Smartphone</h3>
+        <p>$599</p>
+        <button class="add-to-cart" data-product="Smartphone" data-price="599">Add to Cart</button>
+      </div>
+      <!-- Example Product 2 -->
+      <div class="product-card">
+        <img src="https://via.placeholder.com/200" alt="Product 2">
+        <h3>Laptop</h3>
+        <p>$999</p>
+        <button class="add-to-cart" data-product="Laptop" data-price="999">Add to Cart</button>
+      </div>
+      <!-- Example Product 3 -->
+      <div class="product-card">
+        <img src="https://via.placeholder.com/200" alt="Product 3">
+        <h3>Headphones</h3>
+        <p>$199</p>
+        <button class="add-to-cart" data-product="Headphones" data-price="199">Add to Cart</button>
+      </div>
+      <!-- Add more products as needed -->
+    </div>
+  </section>
 
-<section id="feature" class="section-p1">
-    <div class="fe-box">
-        <img src="image/features/f1.png" alt="">
-        <h6>Free shipping</h6>
+  <section id="cart" class="cart-section">
+    <h2>Your Cart</h2>
+    <div id="cart-items">
+      <p>Your cart is empty</p>
     </div>
-    <div class="fe-box">
-        <img src="image/features/f2.png" alt="">
-        <h6>online Order</h6>
-    </div>
-    <div class="fe-box">
-        <img src="image/features/f3.png" alt="">
-        <h6> Save Money</h6>
-    </div>
-    <div class="fe-box">
-        <img src="image/features/f4.png" alt="">
-        <h6>Promotions</h6>
-    </div>
-    <div class="fe-box">
-        <img src="image/features/f5.png" alt="">
-        <h6>Happy Sell</h6>
-    </div>
-    <div class="fe-box">
-        <img src="image/features/f6.png" alt="">
-        <h6>F24/7 Support</h6>
-    </div>
+    <button id="checkout-btn" class="checkout-btn">Proceed to Checkout</button>
+  </section>
 
-    
+  <footer>
+    <p>© 2024 TechStore | All rights reserved</p>
+  </footer>
 
-</section>
-
-<section id="product1" class="section-p1" >
-    <h2>Feature Products</h2>
-    <p>Summer Collection New Morden Design</p>
-    <div class="pro-container">
-        <div class="pro">
-            <img src="image/products/f1.jpg" alt="">
-        <div class="des">
-            <span>adidas</span>
-            <h5>Cartoon Astronaut T-shirts</h5>
-            <div class="star">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-            </div>
-            <h4>R500</h4>
-        </div>
-        <a href="#"><i class="fal fa-shopping-cart"></i> </a>
-        </div>
-    </div>
-</section>
-
-
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
